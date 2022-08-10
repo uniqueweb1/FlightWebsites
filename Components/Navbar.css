@@ -1,0 +1,219 @@
+.navbar {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    height: 80px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    list-style: none;
+  }
+  
+  .fa-firstdraft {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-gap: 6px;
+    list-style: none;
+    text-align: center;
+    width: 50vw;
+    justify-content: end;
+    margin-right: 1.5rem;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.2rem 0.4rem;
+  }
+  
+  .nav-links:hover {
+    background-color: #1888ff;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+  
+  
+  .fa-bars {
+    color: #fff;
+  }
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 120vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: #1888ff;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      list-style-type: none;
+      text-decoration: none;
+      transform: translate(15%, 40%);
+      font-size: 1.5rem;
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      background: #1888ff;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  
+    .nav-links-mobile:hover {
+      background: #fff;
+      color: #1888ff;
+      transition: 250ms;
+    }
+  
+    button {
+      display: none;
+    }
+  }
+  /*---------- second nav bar ------*/
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .nav-menu1 {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-gap: 4px;
+    list-style: none;
+    text-align: center;
+ 
+    justify-content: end;
+    margin-right: 1.7rem;
+  }
+  .nav-item1 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+  .nav-links1 {
+    color: white;
+    text-decoration: none;
+    padding: 0.2rem 0.6rem;
+  }
+  .nav-links1:hover {
+    background-color: #1888ff;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+  /*------ nav1 on mobile screen----*/
+  @media screen and (max-width: 960px){
+    .nav-links1 {
+      color: white;
+      text-decoration: none;
+      padding: 0.3rem 0.6rem;
+    }
+    .nav-menu1 {
+      display: grid;
+      grid-template-columns: repeat(8, auto);
+      grid-gap: 2px;
+      list-style: none;
+      text-align: center;
+      font-size: 14px;
+      justify-content: end;
+      margin-right: 1.3rem;
+    }
+  }
+  @media screen and (max-width: 750px){
+    .nav-links1 {
+      color: white;
+      text-decoration: none;
+      padding: 0.2rem 0.4rem;
+    }
+  }
+  @media screen and (max-width: 450px){
+    .nav-links1 {
+      color: white;
+      text-decoration: none;
+      padding: 0.01rem 0.05rem;
+    }
+  }
